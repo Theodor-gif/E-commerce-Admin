@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    img{
+        height: 100px;
+        cursor: pointer;
+    }
+    .inputContainer{
+        position: absolute;
+        bottom: 40%;
+        right: 20%;
+        border-bottom: 1px solid black;
+        width: 16%;
+        display: flex;
+        align-items: baseline;
+        label{
+            img{
+                width: 13px;
+                height: auto;
+                cursor: pointer;
+            }
+        }
+        input{
+            border: none;
+            padding: 1%;
+            margin: 2%;
+            width: 100%;
+        }
+    }
+    .userContainer{
+        position: absolute;
+        width: 10%;
+        bottom: 40%;
+        right: 5%;
+        display: flex;
+        justify-content: space-evenly;
+        img{
+            width: 20px;
+            height: auto;
+            cursor: pointer;
+        }
+    }
+}
+
+.btn{
+    background-color: white;
+    border: none;
+}
+

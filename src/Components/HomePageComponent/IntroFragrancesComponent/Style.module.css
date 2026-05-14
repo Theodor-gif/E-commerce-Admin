@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    p{
+        margin: 1% 0;
+    }
+    h3{
+        text-decoration: underline;
+        span{
+            color: rgb(127, 18, 144);
+            cursor: pointer;
+        }
+    }
+}
+
+.imgContainer{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5% 0;
+    width: 100vw;
+    img{
+        height: 350px;
+        width: 300px;
+        object-fit: cover;
+        scale: .8; opacity: 0;
+        animation: fade-in linear forwards;
+        cursor: pointer;
+        animation-timeline: view();
+        animation-range: 250px 400px;
+    }
+}
+
+@keyframes fade-in {
+    to { scale: 1; opacity: 1;}
+}

@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    border-top: 3px solid rgb(0, 0, 0);  
+    width: 90vw;
+    margin: 5% auto;
+    position: relative;
+}
+
+.nameContainer{
+    position: absolute;
+    top: -15px;
+    width: 20%;
+    text-align: center;
+    background-color: white;
+    left: 40%;
+}
+
+
+.productImage{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    align-items: center;
+    width: 100%;
+}
+
+.main{
+    width: 20%;
+    position: relative;
+    margin-top: 10%;
+    img{
+        width: 100%;
+        cursor: pointer;
+    }
+    h2{
+        font-size: 1rem;
+        margin: 5% 0;
+    }
+    h2:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    p{
+        margin-bottom: 7.5%;
+    }
+}
+
+.OrderButton{
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 5%;
+    cursor: pointer;
+    background-color: white;
+}
+
+.OrderButton:hover{
+    background-color: black;
+    color: white;
+}
+
+.likeButton{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 10%;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.arrow{
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    img{
+        width: 40px;
+    }
+}

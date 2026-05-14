@@ -1,14 +1,15 @@
 
 import HomePage from "./Components/HomePageComponent/HomePage"
-import ProductPage from './Components/ProductPageComponent/ProductPage'
+import UserPage from './Components/UserPageComponent/UserPage'
 import './App.css'
-import { Routers, Router } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
+import Data from './Data/products.json'
 
 function App() {
   return (
     <Routes>
-      <Route path='/' element={<HomePage/>}/>
-      <Route path='/product' element={<ProductPage/>}/>
+      <Route path='/' element={<HomePage  data={Data}/>} />
+      <Route path='/user' element={<UserPage/>}/>
     </Routes>
   )
 }

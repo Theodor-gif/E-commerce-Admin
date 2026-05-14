@@ -1,0 +1,15 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;    /* prevents horizontal scroll/shift */
+}
+
+/* Stops scrollbar from pushing content when it appears/disappears */
+html {
+    scrollbar-gutter: stable;
+}

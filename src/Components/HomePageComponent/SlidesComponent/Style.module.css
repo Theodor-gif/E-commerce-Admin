@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 280px;
+    margin: 40px 0;
+    overflow: hidden;
+    width: 95vw;
+    margin: 0 auto;
+    background-color: rgba(128, 128, 128, 0.25);
+}
+
+.img {
+    height: 300px;
+    width: 250px;
+    object-fit: cover;
+    position: absolute;
+    transition: width 0.4s ease, z-index 0.4s ease;
+    cursor: pointer;
+}
+
+.img:nth-child(1) { left: 0%;   z-index: 4; }
+.img:nth-child(2) { left: 22.5%;  z-index: 3; }
+.img:nth-child(3) { left: 45%;  z-index: 2; }
+.img:nth-child(4) { left: 67.5%;  z-index: 1; }
+
+.img:hover {
+    width: 400px;
+    z-index: 10;
+}

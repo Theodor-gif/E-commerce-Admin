@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.5%;
+    h2{
+        margin-bottom: 2.5%;
+    }
+    div{
+        display: flex;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
+        button{
+            height: 35px;
+            border: none;
+            background-color: white;
+            cursor: pointer;
+            img{
+                width: 30px;
+            }
+        }
+        div{
+            height: 100px;
+            display: flex;
+            justify-content: space-evenly;
+            img{
+                width: 100px;
+            }
+        }
+    }
+}
