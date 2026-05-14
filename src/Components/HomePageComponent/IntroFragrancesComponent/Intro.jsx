@@ -7,7 +7,7 @@ import Style from './Style.module.css'
 function Intro(){
     return(
         <div className={Style.container}>
-            <h2>DOLCE&GABBANA My Devotion Eau de Parfum Intense</h2>
+            <h2>DOLCE&amp;GABBANA My Devotion Eau de Parfum Intense</h2>
             <p>The new fragrance redefines devotion with a deeply personal touch.</p>
             <h3>DISCOVER IT ONLY AT <span>VIBE & VANITY</span></h3>
             <div className={Style.imgContainer}>

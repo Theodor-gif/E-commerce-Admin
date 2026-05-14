@@ -1,43 +1,57 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-.container{
+.container {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    p{
+
+    p {
         margin: 1% 0;
     }
-    h3{
+
+    h3 {
         text-decoration: underline;
-        span{
+
+        span {
             color: rgb(127, 18, 144);
             cursor: pointer;
         }
     }
 }
 
-.imgContainer{
+.imgContainer {
     display: flex;
     justify-content: space-evenly;
     margin: 5% 0;
     width: 100vw;
-    img{
+
+    /* fallback for unsupported browsers */
+    img {
         height: 350px;
         width: 300px;
         object-fit: cover;
-        scale: .8; opacity: 0;
-        animation: fade-in linear forwards;
+        scale: .1;
+        opacity: 0;
         cursor: pointer;
+    }
+}
+
+/* ✅ @supports at the top level */
+@supports (animation-timeline: view()) {
+    .imgContainer img {
+        scale: 0;
+        opacity: 0;
+        animation: fade-in linear forwards;
         animation-timeline: view();
         animation-range: 250px 400px;
     }
 }
 
 @keyframes fade-in {
-    to { scale: 1; opacity: 1;}
+    to { scale: 1; opacity: 1; }
 }
